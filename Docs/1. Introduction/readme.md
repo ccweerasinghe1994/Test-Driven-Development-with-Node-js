@@ -7,6 +7,9 @@
     - [output](#output)
     - [Test Runner](#test-runner)
     - [let's add super test](#lets-add-super-test)
+  - [Development Dependencies](#development-dependencies)
+    - [eslint](#eslint)
+    - [config file](#config-file)
 
 ## Methodology
 
@@ -106,4 +109,50 @@ No tests found related to files changed since last commit
 
 ```shell
 npm install --save-dev supertest
+```
+
+## Development Dependencies
+
+### eslint
+
+```shell
+npm install --save-dev eslint
+```
+
+or short form
+
+```shell
+npm i -D eslint
+```
+
+[eslint website](https://eslint.org/docs/latest/user-guide/getting-started)
+
+### config file
+
+and add the eslint config file
+
+```json
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ]
+    }
+  }
 ```
