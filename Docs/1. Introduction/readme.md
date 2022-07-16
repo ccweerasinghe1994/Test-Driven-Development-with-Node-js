@@ -13,6 +13,7 @@
     - [prettier](#prettier)
     - [prettier config file](#prettier-config-file)
     - [nodemon installation](#nodemon-installation)
+  - [setup the frontend](#setup-the-frontend)
 
 ## Methodology
 
@@ -214,4 +215,28 @@ let's add prettier config file
 
 ```shell
 npm install --save-dev nodemon
+```
+
+and add it to the package.json
+
+```json
+   "start": "nodemon app.js",
+```
+
+now when we change the app it will restart automatically.
+
+## setup the frontend
+
+go to the folder where the app is created
+and run this
+
+```shell
+ npx http-server -c-1 -p 8080 -P http://localhost:3000
+```
+
+flags
+
+```-c-1 no cashing the static files
+-p 8080 is for the running port
+-P http://localhost:3000 request to go to
 ```
