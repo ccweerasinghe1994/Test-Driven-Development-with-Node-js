@@ -10,6 +10,9 @@
   - [Development Dependencies](#development-dependencies)
     - [eslint](#eslint)
     - [config file](#config-file)
+    - [prettier](#prettier)
+    - [prettier config file](#prettier-config-file)
+    - [nodemon installation](#nodemon-installation)
 
 ## Methodology
 
@@ -155,4 +158,60 @@ and add the eslint config file
       ]
     }
   }
+```
+
+### prettier
+
+```shell
+npm install --save-dev prettier
+```
+
+or
+
+```shell
+npm i -D prettier
+```
+
+and
+
+```shell
+npm i -D eslint-config-prettier eslint-plugin-prettier
+```
+
+### prettier config file
+
+```json
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "rules": {
+    "eqeqeq": ["warn", "always"],
+    "prettier/prettier": "warn"
+  },
+  "plugins": ["prettier"]
+}
+
+```
+
+let's add prettier config file
+
+```json
+{
+  "singleQuote": true,
+  "printWidth": 120,
+  "endOfLine": "lf"
+}
+
+```
+
+### nodemon installation
+
+ and add nodemon ass well.
+
+```shell
+npm install --save-dev nodemon
 ```
