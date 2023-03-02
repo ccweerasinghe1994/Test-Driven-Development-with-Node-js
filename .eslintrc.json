@@ -1,0 +1,13 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "rules": {
+    "eqeqeq": ["warn", "always"],
+    "prettier/prettier": "warn"
+  },
+  "plugins": ["prettier"]
+}
