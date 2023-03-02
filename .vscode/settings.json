@@ -1,3 +1,11 @@
 {
-  "cSpell.words": ["mmmmmmmmmmmmmsddddddmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"]
+  "editor.autoIndent": "full",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.acceptSuggestionOnEnter": "on",
+  "files.autoSave": "afterDelay",
+  "editor.fontWeight": "100",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Operator Mono Lig',Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16
 }
