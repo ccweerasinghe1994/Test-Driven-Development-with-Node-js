@@ -18,6 +18,11 @@
 ## Methodology
 
 ![methodology](../img/1.png)
+we are going to use test driven development
+
+- first we write the test for the expected behavior
+- then write the implementation to pass the test
+- cleanup the code
 
 ## creating the project
 
@@ -36,12 +41,26 @@ answer the questions
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "chamara weerasinghe",
+  "author": "ccweerasinghe1994",
   "license": "ISC"
 }
 ```
 
 ## entry point to the application
+
+let's install express
+
+```shell
+npm i express
+```
+
+in our package json
+
+```json
+"dependencies": {
+    "express": "^4.18.1"
+  },
+```
 
 create a file called app.js
 
@@ -195,7 +214,6 @@ npm i -D eslint-config-prettier eslint-plugin-prettier
   },
   "plugins": ["prettier"]
 }
-
 ```
 
 let's add prettier config file
@@ -206,12 +224,11 @@ let's add prettier config file
   "printWidth": 120,
   "endOfLine": "lf"
 }
-
 ```
 
 ### nodemon installation
 
- and add nodemon ass well.
+and add nodemon ass well.
 
 ```shell
 npm install --save-dev nodemon
